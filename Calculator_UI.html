@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Project</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css" rel="stylesheet" />
+    <style>
+        .wripper {
+            width: 400px;
+            margin-top: 10px;
+        }
+        
+        .resultText {
+            background-color: cornflowerblue;
+            color: aliceblue;
+            text-align: right;
+            border-radius: 5px;
+            height: 45px;
+            font-size: larger;
+            padding-top: 5px;
+            padding-right: 10px;
+        }
+        
+        .butt_num {
+            background-color: rgb(240, 236, 231);
+            width: 76px;
+        }
+        
+        div a {
+            margin-bottom: 5px;
+        }
+        
+        .calBtn {
+            background-color: rgb(240, 236, 231);
+            width: 100%;
+            padding: 10px;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wripper mx-auto">
+
+        <div class="resultText ">
+            <span id="Error" class="float-start pt-3" style="color: rgb(240, 46, 46); font-size: 15px;font-weight: 500;">Choose Operator First!</span>
+            <p class="pt-1" id="textFinal">0</p>
+
+        </div>
+        <div class="buttons">
+            <a href="#" type="button" class="btn butt_num " id="numberOne">1</a>
+            <a href="#" type="button" class="btn butt_num " id="numberTwo">2</a>
+            <a href="#" type="button" class="btn butt_num " id="numberThree">3</a>
+            <a href="#" type="button" class="btn butt_num " id="numberFour">4</a>
+            <a href="#" type="button" class="btn butt_num " id="remove">delete</i></a>
+            <a href="#" type="button" class="btn butt_num " id="numberFive">5</a>
+            <a href="#" type="button" class="btn butt_num " id="numberSix">6</a>
+            <a href="#" type="button" class="btn butt_num " id="numberSeven">7</a>
+            <a href="#" type="button" class="btn butt_num " id="numberEight">8</a>
+            <a href="#" type="button" class="btn butt_num " id="add">+</a>
+            <a href="#" type="button" class="btn butt_num " id="numberNine">9</a>
+            <a href="#" type="button" class="btn butt_num " id="numberZero">0</a>
+            <a href="#" type="button" class="btn butt_num " id="multiply">*</a>
+            <a href="#" type="button" class="btn butt_num " id="division">/</a>
+            <a href="#" type="button" class="btn butt_num " id="minus">-</a>
+
+        </div>
+        <div>
+            <button type="button" class="btn calBtn" id="calculateBtn">Calculate</button>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js "></script>
+<script src="./Calculator.js "></script>
+
+</html>
